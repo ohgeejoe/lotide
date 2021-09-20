@@ -15,11 +15,11 @@ const eqObjects = function(object1, object2) {
     const key1 = Object.keys(object1);
     const key2 = Object.keys(object2);
 
-    if (keys1.length !== keys2.length) {
+    if (key1.length !== key2.length) {
       return false;
     }
 
-    for (const key of keys1) {
+    for (const key of key1) {
       const val1 = object1[key];
       const val2 = object2[key];
       const areObjects = isObject(val1) && isObject(val2);
@@ -35,6 +35,7 @@ return true;
 };
 
 
+module.exports = eqObjects;
 
 //test code
 const ab = { a: "1", b: "2" };

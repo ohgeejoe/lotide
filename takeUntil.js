@@ -1,14 +1,15 @@
 const takeUntil = function(array, callback) {
   let arr = [];
   for (let remove of array) {
-    if (!callback(remove)) {  
-      arr.push(remove); 
+    if (!callback(remove)) {
+      arr.push(remove);
     } else {
       return arr;
     }
   }
 };
 
+module.exports = takeUntil;
 
 //test code
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
