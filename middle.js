@@ -1,30 +1,7 @@
 //this program takes an array and returns the middle-most element of the given array.
-//copied eqArrays and assertArraysEqual functions to test.
-const eqArrays = function(array1,array2) {
-  let result = true;
-  if (array1.length !== array2.length) {
-    result = false;
-    console.log("the arrays are different lengths");
-  }
-  for (let i = 0; i < array1.length; i++) {
-    
-    if (array1[i] !== array2[i]) {
-      result = false;
-    } else {
-      result = true;
-    }
-  }
-  return result;
-};
-
-const assertArraysEqual = function(array1,array2) {
-  if (eqArrays(array1,array2)) {
-    console.log('The arrays are equal!');
-  } else {
-    console.log('The arrays are not equal');
-  }
-};
-
+const eqArrays = require('./eqArrays');
+const assertEqual = require('./assertEqual');
+const assertArraysEqual = require('./assertArraysEqual');
 
 const middle = function(array) {
   const middleArray = [];
@@ -49,9 +26,11 @@ const middle = function(array) {
 
 //test cases.
 
-console.log(middle([1])); // => []
-console.log(middle([1, 2])); // => []
-console.log(middle([1, 2, 3])); // => [2]
-console.log(middle([1, 2, 3, 4, 5])); // => [3]
-console.log(middle([1, 2, 3, 4])); // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
+// console.log(middle([1])); // => []
+// console.log(middle([1, 2])); // => []
+// console.log(middle([1, 2, 3])); // => [2]
+// console.log(middle([1, 2, 3, 4, 5])); // => [3]
+// console.log(middle([1, 2, 3, 4])); // => [2, 3]
+// console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
+
+module.exports = middle;
