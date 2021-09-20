@@ -16,7 +16,6 @@ const findKeyByValue = function(inputObject,inputKey) {
     if (inputObject[key] === inputKey) {
       return key;
     }
-
   }
 }
 

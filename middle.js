@@ -41,7 +41,7 @@ const middle = function(array) {
     }
     //in even cases (everything else)
     else {
-      middleArray.push(array[middleIndex], array[middleIndex + 1]);//plus one since even numbered arrays will have two middle elements. 
+      middleArray.push(array[middleIndex], array[middleIndex + 1]);//plus one since even numbered arrays will have two middle elements.
     }
     return middleArray;
   }
