@@ -45,7 +45,7 @@ const letterPositions = function(sentence) {
 
 module.exports = letterPositions;
 
-//test code the .e is necessary becuase it would be passing in an object. .e converts to an array.
-assertArraysEqual(letterPositions("hello").e, [1]);
-//test code. didnt skip spaces yet.
-console.log(letterPositions("lighthouse in the house"));
+// //test code the .e is necessary becuase it would be passing in an object. .e converts to an array.
+// assertArraysEqual(letterPositions("hello").e, [1]);
+// //test code. didnt skip spaces yet.
+// console.log(letterPositions("lighthouse in the house"));
