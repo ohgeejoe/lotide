@@ -1,6 +1,5 @@
 // the eqObjects function will take in two objects and returns a boolean based on a perfect match.
 
-//pasting assertEqual
 const assertEqual = function(actual, expected) {
   if (actual !== expected) {
     console.assert(actual === expected, `🛑🛑🛑 Assertion failed ${actual} !== ${expected}`);
@@ -27,7 +26,7 @@ const eqObjects = function(object1, object2) {
         return false;
       }
     }
-return true;
+    return true;
   };
   function isObject(object) {
     return typeof object === 'object';

@@ -1,13 +1,6 @@
 //This function taks in a collection of items and returns the count for a specific set of thsoe items.
-
-//pasting assertEqual function.
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) {
-    console.assert(actual === expected, `🛑🛑🛑 Assertion failed ${actual} !== ${expected}`);
-  } else {
-    console.log(`✅✅✅ Assertion Passed:  + ${actual} === ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
+const eqArrays = require('./eqArrays');
 
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
